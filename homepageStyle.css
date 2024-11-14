@@ -25,6 +25,7 @@ header {
 .navigation > a {
     margin: 1.5rem;
     font-weight: 600;
+    font-size: 18px;
     text-decoration: none;
     color: #000;
 }
@@ -69,4 +70,37 @@ header {
 .user a:hover{
     color: #25AB42;
 }
+/*----------------------------------------------------------------------*/
 
+.searchbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    padding-top: 10px;
+}
+
+.box {
+    background-color: #fcfcfc;
+    height:  7vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.box > a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+#searchbar {
+    flex: 1;
+    background-color: #fcfcfc;
+    border-style: none;
+    width: 40%;
+    padding-left: 5px;
+    font-size: 16px;
+    outline: none;
+}
