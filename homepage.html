@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepageStyle.css">
+    <link rel="stylesheet" href="css/homepageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/glider.css">
     <title>EB Home</title>
 </head>
 <body>
@@ -63,7 +64,7 @@
         </div>
     </div>
     <section class="product-section">
-        <div background-image="img/long-waredrobe" class="hot-sale">
+        <div background-image="img/long-waredrobe.jpg" class="hot-sale">
             <p>HOT SALE</p>
         </div>
         <section class="product">
@@ -174,6 +175,110 @@
             <button>Get Your Discount</button>
         </div>
     </section>
-    <script src="slider.js"></script>
+    <div class="seperator">
+        <div class="market">
+            <div class="line-container">
+                <h1>Offers</h1>
+                <div class="line"></div>
+            </div>
+            <p>Don't miss out on best offers</p>
+        </div>
+    </div>
+    <section class="offers-section">
+        <div class="glider-contain">
+            <div class="glider">
+                <div class="offers-box">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info">
+                        <h1>20% off on all small shelf</h1>
+                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+                <div class="offers-box1">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info1">
+                        <h1>25% off all sofa tables</h1>
+                        <p>Enhance your space with 20% off all sofa tables! Perfect for decor or storage, these stylish tables are a must-have—don’t miss this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+                <div class="offers-box">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info">
+                        <h1>20% off on all small shelf</h1>
+                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+                <div class="offers-box1">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info1">
+                        <h1>20% off on all small shelf</h1>
+                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+                <div class="offers-box">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info">
+                        <h1>20% off on all small shelf</h1>
+                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+                <div class="offers-box1">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info1">
+                        <h1>20% off on all small shelf</h1>
+                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+                <div class="offers-box">
+                    <div class="img-container">
+                        <img src="img/discount-shelf1.jpeg" alt="">
+                    </div>
+                    <div class="offer-info">
+                        <h1>20% off on all small shelf</h1>
+                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
+                        <button> > </button>
+                    </div>
+                </div>
+            </div>
+          
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+        </div>
+
+    </section>
+
+    <script src="js/glider.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+  slidesToScroll: 1,
+  slidesToShow: 3.1,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+    </script>
+
 </body>
 </html>
