@@ -611,3 +611,44 @@ header {
     object-fit: fill;
 }
 
+/*--------------------------------------------------------------------------------------*/
+
+footer {
+    margin: 4rem;
+    background-color: #fcfcfc;
+    padding: 3rem;
+    border-radius: 30px;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: solid 2px;
+}
+
+footer .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.links h3 {
+    font-size: 23px;
+    color: #03821F;
+    padding-bottom: 13px;
+}
+
+.links .link-items {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #03821F;
+}
+
+.link-items:nth-last-child(1) i {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
