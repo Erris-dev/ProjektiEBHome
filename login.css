@@ -9,7 +9,7 @@ body{
     background-image: url(img/output\ 1.png);
    background-size:cover;
     background-repeat: no-repeat;
-   width: 100%;
+    width: 100%;
 }
 header {
     display: flex;
@@ -75,13 +75,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 84vh;
 
 }
 
 
  .wrapper{
     justify-self: center;
-    margin-top: 5%;
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);

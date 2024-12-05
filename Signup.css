@@ -81,13 +81,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 86vh;
 }
 
 
  .wrapper{
     justify-self: center;
-    margin-top: 5%;
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
