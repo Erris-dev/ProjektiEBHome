@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="login.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <script></script>
 </head>
 <body>
     <header>
@@ -29,14 +29,15 @@
     </header>
     <div class="wrapper-container">
     <div class="wrapper">
-        <form action="">
+        <form id="form" action="/">
             <h1>Login</h1>
             <div class="input-box">
                 <input type="text" placeholder="Please type your username here..." required>
+                <div class="error" id="username-error"></div>
             </div>
             <div class="input-box">
                 <input type="password" placeholder="Please type your password here..." required>
-            </div>
+                <div class="error" id="password-error"></div>
             <h2>Forgot password? <a href="#">Reset here</a> </h2>
             <button type="submit" class="btn">Login</button>
             <div class="signup-link">
