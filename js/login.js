@@ -28,5 +28,6 @@ const password = document.getElementById('password');
 
         if (isValid) {
             alert('Login successful!');
+
         }
     });
