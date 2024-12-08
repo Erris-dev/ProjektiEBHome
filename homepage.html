@@ -64,17 +64,18 @@
         <a><i class="fa-solid fa-arrow-turn-up"></i></a>
         </div>
     </div>
-    <div class="marketplace-buttons">
-        <button><i class="fa-solid fa-chevron-left"></i></button>
-        <button><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
+
     <section class="product-section">
         <div background-image="img/long-waredrobe.jpg" class="hot-sale">
             <p>HOT SALE</p>
         </div>
         <div class="sliders">
-            <button id="test">1</button>
+            <div class="marketplace-buttons">
+                <button id="prev-btn-1"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next-btn-1"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
              <section class="product-container">
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
@@ -193,10 +194,6 @@
                 </div>
             </div>
              </section>
-             <div class="marketplace-buttons">
-                <button><i class="fa-solid fa-chevron-left"></i></button>
-                <button><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
              <section class="product-container1">
                 <div class="product-card">
                     <div class="product-image">
@@ -316,6 +313,10 @@
                     </div>
                 </div>
             </section>
+            <div class="marketplace-buttons">
+                <button id="prev-btn-2"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next-btn-2"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
         </div>
         
     </section>
@@ -340,86 +341,82 @@
             <p>Don't miss out on best offers</p>
         </div>
     </div>
-    <section class="offers-section">
-        <div class="glider-contain">
-            <div class="glider">
-                <div class="offers-box">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info">
-                        <h1>20% off on all small shelf</h1>
-                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
-                <div class="offers-box1">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info1">
-                        <h1>25% off all sofa tables</h1>
-                        <p>Enhance your space with 20% off all sofa tables! Perfect for decor or storage, these stylish tables are a must-have—don’t miss this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
-                <div class="offers-box">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info">
-                        <h1>20% off on all small shelf</h1>
-                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
-                <div class="offers-box1">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info1">
-                        <h1>20% off on all small shelf</h1>
-                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
-                <div class="offers-box">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info">
-                        <h1>20% off on all small shelf</h1>
-                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
-                <div class="offers-box1">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info1">
-                        <h1>20% off on all small shelf</h1>
-                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
-                <div class="offers-box">
-                    <div class="img-container">
-                        <img src="img/discount-shelf1.jpeg" alt="">
-                    </div>
-                    <div class="offer-info">
-                        <h1>20% off on all small shelf</h1>
-                        <p>Upgrade your space with our 20% off sale on all small shelves! Whether you're looking to add a bit of storage or display your favorite decor, our small shelves are the perfect touch for any room. Stylish, versatile, and now at an incredible discount—don’t miss out on this limited-time offer!</p>
-                        <button> > </button>
-                    </div>
-                </div>
+
+    <section id="offers-sec" class="offers-section">
+        <div class="offer-card">
+            <div class="product-image">
+                <img src="img/shelf.jpg" alt="" class="product-thumb">
             </div>
-          
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+            <div class="offer-info">
+                <h2 class="offer-title">Limited-Time Offer: Shelf on Discount
+
+                </h2>
+                <p class="offer-description"></p>Upgrade your home or office with our premium shelf, 
+                now available at a special discounted price. Built with high-quality materials for long-lasting
+                 use, its modern, sleek design complements any interior. This versatile shelf is perfect for organizing books, decor, and essentials.</p>
+            </div>
         </div>
+        <div class="offer-card">
+            <div class="product-image">
+                <img src="download.png" alt="" class="product-thumb">
+            </div>
+            <div class="offer-info">
+                <h2 class="offer-title">Special Offer: Tables on Discount
+
+                </h2>
+                <p class="offer-description"></p>Refresh your space with our stylish and durable tables, now available at a special discounted price. Designed for functionality and modern appeal, these tables are perfect for dining, working, or enhancing your home décor.
+
+            </p>
+
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="product-image">
+                <img src="download.png" alt="" class="product-thumb">
+            </div>
+            <div class="offer-info">
+                <h2 class="offer-title">Limited-Time Offer: Chairs on Discount
+
+                </h2>
+                <p class="offer-description"></p>Upgrade your home or office with our comfortable and stylish chairs, now available at a special discounted price. Designed for both comfort and durability, they are perfect for dining, working, or adding a touch of elegance to any room.
+
+            </p>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="product-image">
+                <img src="download.png" alt="" class="product-thumb">
+            </div>
+            <div class="offer-info">
+                <h2 class="offer-title">Special Offer: Bed Frames on Discount
+
+                </h2>
+                <p class="offer-description"></p>Transform your bedroom with our premium bed frames, now available at a special discounted price. Designed for comfort, durability, and style, they provide the perfect foundation for a good night’s sleep while enhancing your bedroom décor.
+
+            </p>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="product-image">
+                <img src="download.png" alt="" class="product-thumb">
+            </div>
+            <div class="offer-info">
+                <h2 class="offer-title">Limited-Time Offer: Wardrobes on Discount
+
+                </h2>
+                <p class="offer-description"></p>Maximize your storage space with our stylish and durable wardrobes, now available at a special discounted price. Designed for functionality and modern appeal, they offer ample space to keep your clothes and essentials organized.
+
+            </p>
+            </div>
+        </div>
+        
     </section>
+    <div class="marketplace-buttons">
+        <button id="prev-btn-3"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="next-btn-3"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+
     <section class="services">
         <div class="item">
             <i class="fa-solid fa-truck"></i>
@@ -481,28 +478,20 @@
                 </div>
             </div>
             <div class="footer-right">
-                <p>Stay Updated without our new offers</p>
+                <p>Stay Updated with our new offers</p>
                 <div class="subscribe-footer">
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="" placeholder="Type your email...">
                     <button>Subscribee</button>
                 </div>
-                <input type="checkbox"> You agree that you are at least 13+ years old
+                <div class="footer-check">
+                <input type="checkbox" > You agree that you are at least 13+ years old
+                </div>
             </div>
+            <div class="line-footer"></div>
+            <p id="footer-copyright">Copyright: © [Year] EB Home. All rights reserved. Unauthorized use or reproduction is prohibited.</p>
     </footer>
 
-    <script src="js/glider.js"></script>
-    <script>
-        new Glider(document.querySelector('.glider'), {
-  slidesToScroll: 1,
-  slidesToShow: 3.1,
-  draggable: true,
-  dots: '.dots',
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  }
-});
-    </script>
+    <script src="js/slider.js"></script>
 
 </body>
 </html>
