@@ -15,6 +15,7 @@
         <div id="logo">
             <img src="img/LogoEB.png" alt="logo">
         </div>
+        <button id="menu-btn">&#9776;</button>
         <div class="navigation">
             <a href="homepage.html" id="home">Home</a>
             <a href="">Marketplace</a>
@@ -26,9 +27,22 @@
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             <a class="remove" href=""><i class="fa-regular fa-heart"></i></a>
 
-            <div id="profilepic"><img src="" alt=""></div>
         </div>
+        
     </header>
+
+    <div class="sidebar">
+        <button class="close-btn">&times;</button>
+        <a href="homepage.html">Home</a>
+        <a href="">Marketplace</a>
+        <a href="aboutUs.html">About us</a>
+        <button id="head-button">Sell Product</button>
+        <div class="user">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="remove" href=""><i class="fa-regular fa-heart"></i></a>
+        </div>
+    </div>
 
 <div class="about-container">
     <div class="about-header">
@@ -89,6 +103,22 @@
         <div class="line-footer"></div>
         <p id="footer-copyright">Copyright: © [Year] EB Home. All rights reserved. Unauthorized use or reproduction is prohibited.</p>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector("#menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+    });
+});
+</script>
 
 </body>
 </html>

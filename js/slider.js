@@ -15,25 +15,32 @@ const scrollAmount = 220;
 const scrollAmountOffers = 500;
 
 prevBtn.addEventListener("click", () => {
-    productContainer.scrollLeft -= scrollAmount;  // Scroll left
+    productContainer.scrollLeft -= scrollAmount;  
 });
 
 nextBtn.addEventListener("click", () => {
-    productContainer.scrollLeft += scrollAmount;  // Scroll right
+    productContainer.scrollLeft += scrollAmount;  
 });
 
 prevBtn1.addEventListener("click", () => {
-    productContainer1.scrollLeft -= scrollAmount;  // Scroll left
+    productContainer1.scrollLeft -= scrollAmount;  
 });
 
 nextBtn1.addEventListener("click", () => {
-    productContainer1.scrollLeft += scrollAmount;  // Scroll right
+    productContainer1.scrollLeft += scrollAmount; 
 });
 
-prevBtn2.addEventListener("click", () => {
-    productContainer2.scrollLeft -= scrollAmountOffers;  // Scroll left
-});
 
-nextBtn2.addEventListener("click", () => {
-    productContainer2.scrollLeft += scrollAmountOffers;  // Scroll right
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector("#menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+    });
 });

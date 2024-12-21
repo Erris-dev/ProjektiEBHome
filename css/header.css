@@ -5,7 +5,7 @@ header {
     align-items: center;
     text-align: center;
     height: 6rem;
-    padding: 0px 5rem ;
+    padding: 0px 4rem ;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
 }
 
@@ -41,13 +41,6 @@ header {
     align-items: center;
 }
 
-#profilepic {
-    height: 50px;
-    width: 47px;
-    border-radius: 25px;
-    background-color: #f3f3f3;
-    margin-left: 10px;
-}
 
 .user a {
     margin: 1rem;
@@ -56,4 +49,101 @@ header {
 }
 .user a:hover{
     color: #25AB42;
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar a {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+}
+
+.sidebar a:hover {
+    color: #03821F;
+}
+
+.close-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.sidebar .user {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+.sidebar .user a {
+    margin: 0.5rem 0;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar .user a:hover {
+    color: #25AB42;
+}
+
+
+@media screen and (max-width:1000px) {
+    .navigation {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 0 2rem;
+    }
+    .navigation {
+        display: none;
+    }
+    
+
+    .user {
+        display: none;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .sidebar .user {
+        display: flex;
+    }
 }
