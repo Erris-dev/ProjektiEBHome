@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductDetail</title>
+    <link rel="stylesheet" href="productDetails.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/LogoEB.png" alt="logo">
+        </div>
+        <button id="menu-btn">&#9776;</button>
+        <div class="navigation">
+            <a href="homepage.html" id="home">Home</a>
+            <a href="">Marketplace</a>
+            <a href="aboutUs.html">About us</a>
+            <button id="head-button">Sell Product</button>
+        </div>
+        <div class="user">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="remove" href=""><i class="fa-regular fa-heart"></i></a>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <button class="close-btn">&times;</button>
+        <a href="homepage.html">Home</a>
+        <a href="">Marketplace</a>
+        <a href="aboutUs.html">About us</a>
+        <button id="head-button">Sell Product</button>
+        <div class="user">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="remove" href=""><i class="fa-regular fa-heart"></i></a>
+        </div>
+    </div>
+    <main class="product-page">
+
+        <div class="product-container">
+            <div class="left-side">
+                <div class="img-container">
+                    <img src="products/product2.png" alt="foto1">
+                </div>
+                
+            </div>
+            <div class="right-side">
+                <h1>Produkti 1</h1>
+            <p class="rating">Very Good <span>150 ratings</span></p>
+
+            <p class="price"><strong>Price:</strong> <a>$120</a></p>
+
+            <h2>About this product:</h2>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. 
+                Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, 
+                mattis ligula consectetur, ultrices mauris.
+            </p>
+            <h3>Payment Method: </h3>
+            <div class="payment-cards">
+                <img src="img/Raiffaisen.png" alt="1">
+                <img src="img/paypal1.png" alt="2">
+                <img src="img/paysera.png" alt="3">
+                <img src="img/bkt.png" alt="4">
+            </div>
+            <div class="line"></div>
+            <div class="payment-section">
+                <label for="quantity">Choose quantity:</label>
+                <div class="box"> 
+                    <input type="number" id="quantity" name="quantity" value="2" min="1">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="purchase-btn">Purchase Item</button>
+                <button class="wishlist-btn">Add to wishlist</button>
+            </div>
+
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.querySelector("#menu-btn");
+        const sidebar = document.querySelector(".sidebar");
+        const closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.add("active");
+        });
+    
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+        });
+    });
+    </script>
+</body>
+</html>

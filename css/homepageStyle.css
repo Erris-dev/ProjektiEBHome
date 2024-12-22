@@ -9,6 +9,7 @@
 
 body {
     background-color: #f3f3f3;
+    padding-top: 6rem;
 }
 
 
@@ -415,7 +416,7 @@ body {
 .sell-product {
     display: flex;
     flex-wrap: wrap;
-    margin: 4rem;
+    margin: 3rem;
     background-color: #25AB42;
     border-radius: 40px;
 }
@@ -426,7 +427,7 @@ body {
     align-items: start;
     justify-content: center;
     padding: 3rem;
-    margin: 3rem;
+    margin:0;
     flex: 1 1 40%;
     min-width: 300px;
 }

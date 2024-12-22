@@ -1,33 +1,35 @@
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const password = document.getElementById('password');
+function validateLogin(){
+    let usernameInput = document.getElementById('username').value;
+    let passwordInput = document.getElementById('password').value;
 
-   
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); 
+    document.getElementById('username-error').innerText='';
+    document.getElementById('password-error').innerText='';
 
-        
-        document.querySelectorAll('.error').forEach(function(element) {
-            element.textContent = '';
-        });
+    let usernameRegex = /^[A-Z][a-z]*$/;
 
-        let isValid = true;
+    if(!usernameInput || !usernameRegex.test(usernameInput)){
+        document.getElementById('username-error').innerText='Error: Please enter a valid username!';
+        return false;
+    }
 
-        if (!username.value.trim()) {
-            document.getElementById('username-error').textContent = 'Username is required.';
-            isValid = false;
-        }
+    let passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
 
-        if (!password.value.trim()) {
-            document.getElementById('password-error').textContent = 'Password is required.';
-            isValid = false;
-        } else if (password.value.length < 8) {
-            document.getElementById('password-error').textContent = 'Password must be at least 8 characters long.';
-            isValid = false;
-        }
+    if(!passwordInput || !passwordRegex.test(passwordInput)){
+        document.getElementById('password-error').innerText='Error:Please enter a valid password!';
+        return false;
+    }
+    return true;
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector("#menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
 
-        if (isValid) {
-            alert('Login successful!');
-
-        }
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
     });
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+    });
+});

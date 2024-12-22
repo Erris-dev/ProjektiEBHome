@@ -75,7 +75,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 84vh;
+    height: 100vh;
 
 }
 
@@ -118,8 +118,15 @@ header {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
+    color: #fff;
     
 }
+
+.input-box .error {
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+}
+
 .input-box input::placeholder{
     color: #fff;
 }

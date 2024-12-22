@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="Signup.css" type="text/css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="/.Signup.js"></script>
-
-    
 </head>
 <body>
     <header>
@@ -46,24 +43,23 @@
 
 <div class="wrapper-container">
     <div class="wrapper">
-        <form id="form" action="homepage.html">
+        <form id="form" action="Signup.html" onsubmit="return validateForm()">
             <h1>Sign up</h1>
             <div class="input-box1">
-                <input id="firstname" type="text" placeholder="First name" required>
-                    <input id="lastname" type="text" placeholder="Last name" required>
-                    <div class="error" id="name-error"></div>
+                <input id="fullName" type="text" placeholder="Full Name">
+                <span class="error" id="name-error"></span>
             </div>
             <div class="input-box">
-                <input id="email" type="email" placeholder="Email" required>
+                <input id="email" type="email" placeholder="Email" >
                 <div class="error" id="email-error"></div>
             </div>
             <div class="input-box">
-                <input id="password" type="password" placeholder="Password" required>
+                <input id="password" type="password" placeholder="Password" >
                 <div class="error" id="password-error"></div>
             </div>
             <div class="input-box">
-                <input id="confirmPassword" type="password" placeholder="Confirm password" required>
-                <div class="error" id="confrim-password-error"></div>
+                <input id="confirmPassword" type="password" placeholder="Confirm password" >
+                <div class="error" id="confirm-password-error"></div>
             </div>
             <h2>By signing up, I agree to the Privacy Policy and the Terms of Services </h2>
             <button type="submit" class="btn">Create Account</button>
@@ -73,20 +69,8 @@
         </form>
     </div>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.querySelector("#menu-btn");
-    const sidebar = document.querySelector(".sidebar");
-    const closeBtn = document.querySelector(".close-btn");
-
-    menuBtn.addEventListener("click", () => {
-        sidebar.classList.add("active");
-    });
-
-    closeBtn.addEventListener("click", () => {
-        sidebar.classList.remove("active");
-    });
-});
+<script src="js/Signup.js">
+    
 </script>
     
 </body>

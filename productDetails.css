@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding-top: 6rem;
+    color: #333;
+}
+
+
+.product-page {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1200px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.left-side {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side .img-container {
+    max-width: 100%;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-side {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #45a049;
+}
+
+.right-side .rating {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.right-side .rating span {
+    color: #45a049;
+    font-weight: bold;
+}
+
+.right-side .price {
+    font-size: 1.5rem;
+    color: #e91e63;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.right-side .price a {
+    color: #000;
+}
+
+.right-side h2 {
+    color: #4CAF50;
+    font-size: 20px;
+    font-weight: 600;
+}
+.right-side .description {
+    margin-bottom: 1rem;
+}
+
+.payment-cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.line {
+    height: 1px;
+    background-color: #a2a2a2;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.payment-section {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.payment-section label {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.payment-section input {
+    width: 50px;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+.payment-section .box {
+    background-color: #e3e1e1;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.payment-section button {
+    height: 40px;
+    width: 40px;
+    background-color: #4CAF50;
+    color: #ffff;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons .purchase-btn, .buttons .wishlist-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.buttons .purchase-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons .purchase-btn:hover {
+    background-color: #45a049;
+}
+
+.buttons .wishlist-btn {
+    background-color: #fff;
+    color: black;
+    border: solid 1px #4CAF50;
+}
+
+.buttons .wishlist-btn:hover {
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 768px) {
+    .product-page{
+        padding: 1rem;
+    }
+    .product-container {
+        flex-direction: column;
+    }
+
+    .right-side {
+        margin-top: 2rem;
+    }
+}
