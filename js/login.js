@@ -1,14 +1,14 @@
 function validateLogin(){
-    let usernameInput = document.getElementById('username').value;
+    let emailInput = document.getElementById('email').value;
     let passwordInput = document.getElementById('password').value;
 
-    document.getElementById('username-error').innerText='';
+    document.getElementById('email-error').innerText='';
     document.getElementById('password-error').innerText='';
 
-    let usernameRegex = /^[A-Z][a-z]*$/;
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if(!usernameInput || !usernameRegex.test(usernameInput)){
-        document.getElementById('username-error').innerText='Error: Please enter a valid username!';
+    if(!emailInput || !emailRegex.test(emailInput)){
+        document.getElementById('email-error').innerText='Error: Please enter a valid email!';
         return false;
     }
 
