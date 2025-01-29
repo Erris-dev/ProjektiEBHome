@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    background-color: #f3f3f3;
+    flex-direction: column; 
+}
+
+.sidebar {
+    background-color: #ffffff;
+    width: 270px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+
+.admin-container {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.admin-account h3 {
+    color: #25AB42;
+    font-size: 20px;
+}
+
+.admin-account p {
+    font-weight: 500;
+}
+
+#profile-image1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+i {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* Main Content */
+main {
+    width: calc(100% - 270px);
+    margin-left: 270px;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #25AB42;
+    padding: 0 2rem;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.main-keys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main-keys div {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    min-width: 250px;
+}
+
+.keyNumber {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Other Info */
+.other-info {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.other-info .top-sales {
+    flex: 1 1 60%;
+    height: auto;
+}
+
+.top-sales h2 {
+    color: #25AB42;
+}
+
+.productList {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 1rem;
+    height: 360px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.productItem {
+    padding: 10px;
+    background: #f4f4f4;
+    margin: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-info .traffic {
+    flex: 1 1 35%;
+}
+
+.traffic h2 {
+    color: #25AB42;
+}
+
+.trafficKey {
+    height: 150px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media screen and(max-width: 1200px) {
+    .main-keys div {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .other-info {
+        flex-direction: column;
+    }
+
+    .other-info .top-sales,
+    .other-info .traffic {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        position: static;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-keys div {
+        flex: 1 1 100%;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .admin-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productItem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+
+    }
+
+    nav a span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+    nav a span {
+        display: none;
+    }
+
+
+
+    .main-keys {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-keys div {
+        width: 100%;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .productItem {
+        flex-direction: column;
+        text-align: center;
+    }
+}

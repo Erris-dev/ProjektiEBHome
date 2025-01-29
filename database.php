@@ -52,7 +52,7 @@ class Database {
                 $_SESSION["role"] = $row["Role"];
     
                 if($_SESSION["role"] === "admin"){
-                    header("Location: admin_dashboard.php");
+                    header("Location: dashboard.php");
                     exit();
                 } else {
                     header("Location: homepage.php");
